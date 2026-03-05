@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Growth Assistant — ผู้ช่วย AI สำหรับพ่อค้าแม่ค้า</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header id="site-header">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="nav-logo-icon"><i class="fa-solid fa-seedling"></i></div>
+          <span>AI Growth</span>
+        </a>
+        <div class="nav-links">
+          <a href="#problem" class="th">ปัญหา</a>
+          <a href="#problem" class="en">Problem</a>
+          <a href="#how" class="th">วิธีทำงาน</a>
+          <a href="#how" class="en">How It Works</a>
+          <a href="#features" class="th">ฟีเจอร์</a>
+          <a href="#features" class="en">Features</a>
+          <a href="#pricing" class="th">ราคา</a>
+          <a href="#pricing" class="en">Pricing</a>
+          <div class="lang-switch">
+            <button class="active" data-lang="th">TH</button>
+            <button data-lang="en">EN</button>
+          </div>
+          <a href="#cta" class="btn btn-green nav-cta">
+            <span class="th">เริ่มฟรี</span>
+            <span class="en">Get Started</span>
+          </a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-left">
+          <div class="hero-eyebrow reveal">
+            <span class="tag th"><i class="fa-solid fa-circle-nodes"></i>AI สำหรับตลาดนัด</span>
+            <span class="tag en"><i class="fa-solid fa-circle-nodes"></i>AI for Market Vendors</span>
+          </div>
+          <h1 class="hero-h1 reveal d1">
+            <span class="th">ขายดีขึ้น<br><span class="accent">ของเสียน้อยลง</span><br>ด้วย AI ผ่าน LINE</span>
+            <span class="en">Sell More.<br><span class="accent">Waste Less.</span><br>AI through LINE.</span>
+          </h1>
+          <p class="hero-desc reveal d2">
+            <span class="th">วิเคราะห์กำไร คาดการณ์ยอดขาย และให้คำแนะนำรายวัน ว่าพรุ่งนี้ควรเตรียมสินค้ากี่ชิ้น ทำโปรโมชั่นหรือไม่ ทั้งหมดผ่าน LINE ที่ใช้อยู่แล้ว</span>
+            <span class="en">Analyze profits, forecast sales, and get daily guidance on how much to prep tomorrow — all through LINE you already use every day.</span>
+          </p>
+          <div class="hero-actions reveal d3">
+            <a href="#cta" class="btn btn-line btn-lg">
+              <i class="fa-brands fa-line"></i>
+              <span class="th">เริ่มใช้งานฟรีผ่าน LINE</span>
+              <span class="en">Start Free on LINE</span>
+            </a>
+            <a href="#how" class="btn btn-outline btn-lg">
+              <span class="th">ดูวิธีทำงาน</span>
+              <span class="en">How It Works</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-stats reveal d3">
+            <div class="hstat">
+              <div class="hstat-n">900<span>k+</span></div>
+              <div class="hstat-l th">ร้านค้าตลาดนัดทั่วไทย</div>
+              <div class="hstat-l en">Vendors in Thailand</div>
+            </div>
+            <div class="hstat">
+              <div class="hstat-n">30<span>%</span></div>
+              <div class="hstat-l th">ของเสียเฉลี่ยต่อวัน</div>
+              <div class="hstat-l en">Avg. daily food waste</div>
+            </div>
+            <div class="hstat">
+              <div class="hstat-n">฿59</div>
+              <div class="hstat-l th">ราคาเริ่มต้น/เดือน</div>
+              <div class="hstat-l en">Starting price/month</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal d2">
+          <div class="chat-card">
+            <div class="chat-header">
+              <div class="chat-header-av"><i class="fa-solid fa-robot"></i></div>
+              <div class="chat-header-info">
+                <div class="chat-header-name">AI Growth Assistant</div>
+                <div class="chat-header-status">
+                  <span class="th">ออนไลน์อยู่</span>
+                  <span class="en">Online</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-body">
+              <div class="msg out">
+                <div class="bubble th">วันนี้: รายได้ 1,200 ต้นทุน 700 เหลือ 10 ไม้</div>
+                <div class="bubble en">Today: revenue 1,200 cost 700 leftover 10 sticks</div>
+                <div class="msg-time">21:31</div>
+              </div>
+              <div class="msg in">
+                <div class="ai-result">
+                  <div class="ai-result-title">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="th">สรุปวันนี้</span>
+                    <span class="en">Today's Summary</span>
+                  </div>
+                  <div class="ai-row">
+                    <span class="k th">กำไรสุทธิ</span><span class="k en">Net Profit</span>
+                    <span class="v">฿500 (41.7%)</span>
+                  </div>
+                  <div class="ai-row">
+                    <span class="k th">ของเหลือ</span><span class="k en">Leftover</span>
+                    <span class="v">12.5% ✓</span>
+                  </div>
+                  <div class="ai-row">
+                    <span class="k th">แนวโน้ม</span><span class="k en">Trend</span>
+                    <span class="v">↗ +8%</span>
+                  </div>
+                  <div class="ai-tip">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <span class="th">พรุ่งนี้ฝนตก 72% — แนะนำเตรียม 65 ไม้ (ลด 19%) + โปรฯ 5 ไม้ 30฿ ช่วงเย็น</span>
+                    <span class="en">Rain 72% tomorrow — prep 65 sticks (−19%) + evening promo 5 for ฿30</span>
+                  </div>
+                </div>
+                <div class="msg-time">21:31</div>
+              </div>
+              <div class="msg out">
+                <div class="bubble th">ขอบคุณมากครับ 🙏</div>
+                <div class="bubble en">Thanks a lot! 🙏</div>
+                <div class="msg-time">21:32</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROBLEM ── -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag th"><i class="fa-solid fa-triangle-exclamation"></i>ปัญหาที่เกิดขึ้นทุกวัน</span>
+        <span class="tag en"><i class="fa-solid fa-triangle-exclamation"></i>Daily Problems</span>
+        <h2 class="section-title th">พ่อค้าแม่ค้าไทยเผชิญกับ 3 ปัญหาหลัก</h2>
+        <h2 class="section-title en">Thai Vendors Face 3 Core Problems</h2>
+        <p class="section-sub th">ที่เกิดขึ้นซ้ำทุกวัน และส่งผลต่อกำไรโดยตรง</p>
+        <p class="section-sub en">Repeating every day, directly impacting profitability</p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="prob-card reveal">
+          <div class="prob-icon-wrap red"><i class="fa-solid fa-trash-can"></i></div>
+          <div class="prob-num">01</div>
+          <div class="prob-title th">ของเสียมาก ขาดทุนโดยไม่รู้ตัว</div>
+          <div class="prob-title en">Excessive Waste, Invisible Losses</div>
+          <p class="prob-desc th">ร้านอาหารสดมีของเหลือเฉลี่ย 10–30% ต่อวัน เพราะไม่รู้ว่าควรเตรียมสินค้าเท่าไหร่ เงินหายไปโดยไม่รู้ตัว</p>
+          <p class="prob-desc en">Fresh food stalls waste 10–30% of stock daily from over-preparation. Money silently disappears every single day.</p>
+        </div>
+        <div class="prob-card reveal d1">
+          <div class="prob-icon-wrap amber"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+          <div class="prob-num">02</div>
+          <div class="prob-title th">ยอดขายผันผวน ไม่สามารถคาดการณ์ได้</div>
+          <div class="prob-title en">Unpredictable Sales Fluctuations</div>
+          <p class="prob-desc th">ฝนตก วันหยุด และจำนวนคนเดินตลาดล้วนกระทบยอดขาย แต่ผู้ค้าส่วนใหญ่ไม่มีเครื่องมือรับมือล่วงหน้า</p>
+          <p class="prob-desc en">Rain, holidays, and foot traffic all impact revenue, yet most vendors have no way to anticipate and plan ahead.</p>
+        </div>
+        <div class="prob-card reveal d2">
+          <div class="prob-icon-wrap blue"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="prob-num">03</div>
+          <div class="prob-title th">ตัดสินใจจากความรู้สึก ไม่มีข้อมูล</div>
+          <div class="prob-title en">Gut-Feel Decisions, Zero Data</div>
+          <p class="prob-desc th">ไม่รู้ว่ากำไรจริงเท่าไหร่ ไม่รู้วันไหนขายดีที่สุด ระบบบัญชีและ POS ซับซ้อนและแพงเกินไปสำหรับร้านเล็ก</p>
+          <p class="prob-desc en">No real profit visibility, no trend awareness. Accounting systems and POS tools are too complex and expensive for small vendors.</p>
+        </div>
+      </div>
+
+      <div class="waste-banner reveal">
+        <div class="wb-number">30<span>%</span></div>
+        <div class="wb-text">
+          <div class="wb-title th">กำไรที่หายไปเพราะของเหลือทิ้งทุกวัน</div>
+          <div class="wb-title en">Profit lost to unsold food every single day</div>
+          <p class="wb-desc th">ร้านอาหารรายย่อยในตลาดนัดสูญเสียรายได้หลายพันบาทต่อเดือน เพียงเพราะขาดระบบช่วยวางแผนที่เหมาะสม AI Growth Assistant ถูกสร้างมาเพื่อแก้ปัญหานี้โดยตรง</p>
+          <p class="wb-desc en">Small food vendors lose thousands of baht monthly simply from lacking proper planning tools. AI Growth Assistant is built specifically to solve this problem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag th"><i class="fa-solid fa-list-ol"></i>วิธีการทำงาน</span>
+        <span class="tag en"><i class="fa-solid fa-list-ol"></i>How It Works</span>
+        <h2 class="section-title th">เริ่มใช้งานได้ใน 4 ขั้นตอน</h2>
+        <h2 class="section-title en">Get Started in 4 Simple Steps</h2>
+        <p class="section-sub th">ไม่ต้องเรียนรู้แอปใหม่ ทุกอย่างอยู่ใน LINE ที่ใช้อยู่แล้ว</p>
+        <p class="section-sub en">No new apps to learn — everything works through LINE you already use.</p>
+      </div>
+
+      <div class="steps-grid reveal">
+        <div class="step-item">
+          <div class="step-connector"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="step-num-badge"><i class="fa-brands fa-line"></i></div>
+          <div class="step-n">STEP 01</div>
+          <div class="step-title th">เพิ่มเพื่อนใน LINE</div>
+          <div class="step-title en">Add on LINE</div>
+          <p class="step-desc th">เพิ่ม AI Growth Assistant เป็นเพื่อนใน LINE ไม่ต้องดาวน์โหลดแอปเพิ่ม ไม่ต้องสมัครสมาชิกใหม่</p>
+          <p class="step-desc en">Add AI Growth Assistant as a LINE friend. No downloads, no new registrations required.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-connector"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="step-num-badge"><i class="fa-solid fa-pencil"></i></div>
+          <div class="step-n">STEP 02</div>
+          <div class="step-title th">กรอกข้อมูลสั้นๆ รายวัน</div>
+          <div class="step-title en">Log Daily Data</div>
+          <p class="step-desc th">รายได้ ต้นทุน และของเหลือ ใช้เวลาไม่ถึง 2 นาที ออกแบบให้กรอกง่ายที่สุด</p>
+          <p class="step-desc en">Revenue, cost, and leftovers. Less than 2 minutes per day. Designed for minimum effort.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-connector"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="step-num-badge"><i class="fa-solid fa-brain"></i></div>
+          <div class="step-n">STEP 03</div>
+          <div class="step-title th">AI วิเคราะห์และเรียนรู้</div>
+          <div class="step-title en">AI Analyzes & Learns</div>
+          <p class="step-desc th">ระบบวิเคราะห์แนวโน้ม กำไร อัตราของเสีย และดึงข้อมูลสภาพอากาศพรุ่งนี้มาประมวลผล</p>
+          <p class="step-desc en">System analyzes trends, profits, waste rates, and pulls tomorrow's weather data for processing.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num-badge"><i class="fa-solid fa-lightbulb"></i></div>
+          <div class="step-n">STEP 04</div>
+          <div class="step-title th">รับคำแนะนำที่ลงมือทำได้ทันที</div>
+          <div class="step-title en">Receive Actionable Advice</div>
+          <p class="step-desc th">รู้ชัดว่าพรุ่งนี้เตรียมกี่ชิ้น ทำโปรโมชั่นหรือไม่ ปรับราคาอย่างไร ลงมือได้เลย</p>
+          <p class="step-desc en">Know exactly how much to prepare, whether to run promos, and how to adjust pricing. Act immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag th"><i class="fa-solid fa-wand-magic-sparkles"></i>ฟีเจอร์</span>
+        <span class="tag en"><i class="fa-solid fa-wand-magic-sparkles"></i>Features</span>
+        <h2 class="section-title th">ระบบ AI ที่ออกแบบมาสำหรับร้านคุณโดยเฉพาะ</h2>
+        <h2 class="section-title en">AI Built Specifically for Your Store</h2>
+        <p class="section-sub th">ไม่ใช่ระบบบัญชี ไม่ใช่ POS แต่คือผู้ช่วยตัดสินใจธุรกิจที่ฉลาดที่สุดสำหรับผู้ค้ารายย่อย</p>
+        <p class="section-sub en">Not accounting. Not POS. The smartest business decision partner for micro-entrepreneurs.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feat-card reveal">
+          <div class="feat-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="feat-title th">วิเคราะห์กำไรอัตโนมัติ</div>
+          <div class="feat-title en">Auto Profit Analysis</div>
+          <p class="feat-desc th">คำนวณ Profit Margin, อัตราของเสีย และแนวโน้มยอดขายแบบเรียลไทม์ ไม่ต้องใช้ Excel</p>
+          <p class="feat-desc en">Calculate Profit Margin, waste rate, and sales trends in real-time. No more Excel spreadsheets.</p>
+        </div>
+        <div class="feat-card reveal d1">
+          <div class="feat-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+          <div class="feat-title th">คาดการณ์ยอดขายด้วย AI</div>
+          <div class="feat-title en">AI Sales Forecasting</div>
+          <p class="feat-desc th">Machine Learning ผสานข้อมูลสภาพอากาศและประวัติยอดขาย เพื่อบอกว่าพรุ่งนี้ควรเตรียมเท่าไหร่</p>
+          <p class="feat-desc en">ML models combine weather data and sales history to predict exactly how much to prepare tomorrow.</p>
+        </div>
+        <div class="feat-card reveal d2">
+          <div class="feat-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div class="feat-title th">คำแนะนำเชิงปฏิบัติ</div>
+          <div class="feat-title en">Actionable Recommendations</div>
+          <p class="feat-desc th">บอกชัดเจนว่า "ลดการเตรียม 15%" หรือ "ทำโปรโมชั่นช่วงเย็น" ไม่ใช่แค่กราฟ</p>
+          <p class="feat-desc en">Clear directives like "reduce prep by 15%" or "run evening promo" — not just confusing charts.</p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon"><i class="fa-solid fa-bell"></i></div>
+          <div class="feat-title th">แจ้งเตือนอัตโนมัติ</div>
+          <div class="feat-title en">Smart Alerts</div>
+          <p class="feat-desc th">รับแจ้งเตือนผ่าน LINE เมื่อมีความเสี่ยงของเสียสูง หรือมีโอกาสเพิ่มยอดขายในวันนั้น</p>
+          <p class="feat-desc en">LINE notifications when waste risk is high or there's an opportunity to boost sales that day.</p>
+        </div>
+        <div class="feat-card reveal d1">
+          <div class="feat-icon"><i class="fa-brands fa-line"></i></div>
+          <div class="feat-title th">ใช้งานผ่าน LINE ที่คุ้นเคย</div>
+          <div class="feat-title en">Works Through LINE</div>
+          <p class="feat-desc th">ไม่ต้องเรียนรู้แอปใหม่ ทุกอย่างอยู่ใน LINE ที่เปิดอยู่ทุกวัน ง่ายที่สุดในโลก</p>
+          <p class="feat-desc en">No new apps. Everything in LINE you already open every day — the lowest barrier possible.</p>
+        </div>
+        <div class="feat-card reveal d2">
+          <div class="feat-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="feat-title th">ลด Food Waste</div>
+          <div class="feat-title en">Reduce Food Waste</div>
+          <p class="feat-desc th">ผลิตในปริมาณที่พอดี ลดของเสียจากอาหาร สอดคล้องกับ BCG Economy และ Circular Economy</p>
+          <p class="feat-desc en">Produce just enough — cut food waste and align with BCG and Circular Economy principles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMPARISON ── -->
+  <section class="compare-section" id="compare">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag th"><i class="fa-solid fa-scale-balanced"></i>เปรียบเทียบ</span>
+        <span class="tag en"><i class="fa-solid fa-scale-balanced"></i>Comparison</span>
+        <h2 class="section-title th">AI Growth vs ทางเลือกอื่น</h2>
+        <h2 class="section-title en">AI Growth vs The Alternatives</h2>
+      </div>
+
+      <div class="compare-table reveal">
+        <div class="compare-thead">
+          <div class="compare-th th">รายการเปรียบเทียบ</div>
+          <div class="compare-th en">Feature</div>
+          <div class="compare-th th">Excel / บัญชีเอง</div>
+          <div class="compare-th en">Excel / Manual</div>
+          <div class="compare-th highlight th"><i class="fa-solid fa-seedling"></i>AI Growth Assistant</div>
+          <div class="compare-th highlight en"><i class="fa-solid fa-seedling"></i>AI Growth Assistant</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell label th"><i class="fa-solid fa-calculator"></i>คำนวณกำไรอัตโนมัติ</div>
+          <div class="compare-cell label en"><i class="fa-solid fa-calculator"></i>Auto profit calculation</div>
+          <div class="compare-cell th"><i class="fa-solid fa-minus"></i> ทำเองช้า</div>
+          <div class="compare-cell en"><i class="fa-solid fa-minus"></i> Manual, slow</div>
+          <div class="compare-cell highlight yes th"><i class="fa-solid fa-check"></i> อัตโนมัติทันที</div>
+          <div class="compare-cell highlight yes en"><i class="fa-solid fa-check"></i> Instant, automatic</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell label th"><i class="fa-solid fa-chart-bar"></i>คาดการณ์ยอดขาย</div>
+          <div class="compare-cell label en"><i class="fa-solid fa-chart-bar"></i>Sales forecasting</div>
+          <div class="compare-cell th"><i class="fa-solid fa-xmark"></i> ไม่มี</div>
+          <div class="compare-cell en"><i class="fa-solid fa-xmark"></i> None</div>
+          <div class="compare-cell highlight yes th"><i class="fa-solid fa-check"></i> AI + สภาพอากาศ</div>
+          <div class="compare-cell highlight yes en"><i class="fa-solid fa-check"></i> AI + weather data</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell label th"><i class="fa-solid fa-lightbulb"></i>คำแนะนำเชิงปฏิบัติ</div>
+          <div class="compare-cell label en"><i class="fa-solid fa-lightbulb"></i>Actionable advice</div>
+          <div class="compare-cell th"><i class="fa-solid fa-xmark"></i> ไม่มี</div>
+          <div class="compare-cell en"><i class="fa-solid fa-xmark"></i> None</div>
+          <div class="compare-cell highlight yes th"><i class="fa-solid fa-check"></i> รายวัน</div>
+          <div class="compare-cell highlight yes en"><i class="fa-solid fa-check"></i> Daily</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell label th"><i class="fa-brands fa-line"></i>ใช้งานผ่าน LINE</div>
+          <div class="compare-cell label en"><i class="fa-brands fa-line"></i>Works via LINE</div>
+          <div class="compare-cell th"><i class="fa-solid fa-xmark"></i> ไม่ได้</div>
+          <div class="compare-cell en"><i class="fa-solid fa-xmark"></i> No</div>
+          <div class="compare-cell highlight yes th"><i class="fa-solid fa-check"></i> ใช่</div>
+          <div class="compare-cell highlight yes en"><i class="fa-solid fa-check"></i> Yes</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell label th"><i class="fa-solid fa-thai-baht-sign"></i>ราคาสำหรับร้านเล็ก</div>
+          <div class="compare-cell label en"><i class="fa-solid fa-thai-baht-sign"></i>Affordable pricing</div>
+          <div class="compare-cell th"><i class="fa-solid fa-minus"></i> ฟรี แต่ใช้เวลามาก</div>
+          <div class="compare-cell en"><i class="fa-solid fa-minus"></i> Free but time-consuming</div>
+          <div class="compare-cell highlight yes th"><i class="fa-solid fa-check"></i> เริ่มต้นฟรี / ฿59/เดือน</div>
+          <div class="compare-cell highlight yes en"><i class="fa-solid fa-check"></i> Free / ฿59/mo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="testi-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag th"><i class="fa-solid fa-comments"></i>เสียงจากผู้ใช้จริง</span>
+        <span class="tag en"><i class="fa-solid fa-comments"></i>Real User Reviews</span>
+        <h2 class="section-title th">พ่อค้าแม่ค้าที่เปลี่ยนแปลงธุรกิจด้วย AI</h2>
+        <h2 class="section-title en">Vendors Who Transformed Their Business with AI</h2>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text th">"เมื่อก่อนทำหมูปิ้งเผื่อไว้เยอะ เหลือทิ้งทุกวัน ตอนนี้ AI บอกเลยว่าควรทำกี่ไม้ กำไรเพิ่มขึ้นเกือบ 30% เลยครับ"</p>
+          <p class="testi-text en">"Used to over-prepare grilled pork every day and waste tons. Now AI tells me exactly how many to make. Profit up nearly 30%."</p>
+          <div class="testi-author">
+            <div class="testi-av"><i class="fa-solid fa-user-chef"></i></div>
+            <div>
+              <div class="testi-name">คุณสมชาย</div>
+              <div class="testi-role th">ร้านหมูปิ้ง ตลาดนัดจตุจักร</div>
+              <div class="testi-role en">Grilled Pork Stall, JJ Market</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal d1">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text th">"ฝนตกทีไรขายไม่ได้เลย แต่ตอนนี้รู้ล่วงหน้า ลดจำนวนและทำโปรโมชั่นก่อน ของหมดทุกวันเลยค่ะ"</p>
+          <p class="testi-text en">"Rain always killed my sales. Now I know in advance, prep less and run promos. Selling out every single day now."</p>
+          <div class="testi-author">
+            <div class="testi-av"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <div class="testi-name">คุณมาลี</div>
+              <div class="testi-role th">ร้านน้ำปั่น ตลาดนัดรัชดา</div>
+              <div class="testi-role en">Smoothie Stand, Ratchada Market</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal d2">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text th">"ไม่เคยรู้เลยว่ากำไรจริงเท่าไหร่ พอใช้ AI Growth ถึงได้รู้ว่าขาดทุนอยู่ ปรับได้เลยทันทีครับ"</p>
+          <p class="testi-text en">"Never knew my real profit before. After using AI Growth I discovered I was losing money and fixed it immediately."</p>
+          <div class="testi-author">
+            <div class="testi-av"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <div class="testi-name">คุณวิชัย</div>
+              <div class="testi-role th">ร้านข้าวผัด พระประแดง</div>
+              <div class="testi-role en">Fried Rice Stall, Phra Pradaeng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ── -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <span class="tag th"><i class="fa-solid fa-tag"></i>ราคา</span>
+        <span class="tag en"><i class="fa-solid fa-tag"></i>Pricing</span>
+        <h2 class="section-title th">ราคาที่ทุกร้านเข้าถึงได้</h2>
+        <h2 class="section-title en">Pricing Every Vendor Can Afford</h2>
+        <p class="section-sub th">เริ่มต้นฟรี ไม่ต้องใช้บัตรเครดิต อัปเกรดเมื่อพร้อม</p>
+        <p class="section-sub en">Start free, no credit card required. Upgrade whenever you're ready.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="price-plan th">แผนฟรี</div>
+          <div class="price-plan en">Free Plan</div>
+          <div class="price-amount">฿0</div>
+          <div class="price-per th">ฟรีตลอดชีพ</div>
+          <div class="price-per en">Forever free</div>
+          <div class="price-divider"></div>
+          <ul class="price-list">
+            <li class="th"><i class="fa-solid fa-check"></i>บันทึกรายได้รายวัน</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Daily revenue tracking</li>
+            <li class="th"><i class="fa-solid fa-check"></i>คำนวณกำไรอัตโนมัติ</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Auto profit calculation</li>
+            <li class="th"><i class="fa-solid fa-check"></i>สรุปรายสัปดาห์</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Weekly summaries</li>
+            <li class="th"><i class="fa-solid fa-check"></i>ใช้งานผ่าน LINE</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Works through LINE</li>
+          </ul>
+          <button class="price-btn free-btn th">เริ่มใช้งานฟรี</button>
+          <button class="price-btn free-btn en">Start Free</button>
+        </div>
+
+        <div class="price-card featured reveal d1">
+          <div class="price-badge th">แนะนำ</div>
+          <div class="price-badge en">Popular</div>
+          <div class="price-plan th">แผน Pro</div>
+          <div class="price-plan en">Pro Plan</div>
+          <div class="price-amount">฿59</div>
+          <div class="price-per th">/เดือน · ทดลองฟรี 30 วัน</div>
+          <div class="price-per en">/month · 30-day free trial</div>
+          <div class="price-divider"></div>
+          <ul class="price-list">
+            <li class="th"><i class="fa-solid fa-check"></i>ทุกอย่างในแผนฟรี</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Everything in Free</li>
+            <li class="th"><i class="fa-solid fa-check"></i>AI คาดการณ์ยอดขาย</li>
+            <li class="en"><i class="fa-solid fa-check"></i>AI sales forecasting</li>
+            <li class="th"><i class="fa-solid fa-check"></i>คำแนะนำเชิงปฏิบัติรายวัน</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Daily actionable recommendations</li>
+            <li class="th"><i class="fa-solid fa-check"></i>วิเคราะห์ความเสี่ยงสภาพอากาศ</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Weather risk analysis</li>
+            <li class="th"><i class="fa-solid fa-check"></i>แจ้งเตือนอัตโนมัติ</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Smart LINE alerts</li>
+            <li class="th"><i class="fa-solid fa-check"></i>รายงานรายเดือน</li>
+            <li class="en"><i class="fa-solid fa-check"></i>Monthly performance reports</li>
+          </ul>
+          <button class="price-btn pro-btn th" id="proCtaBtn">ทดลองฟรี 30 วัน</button>
+          <button class="price-btn pro-btn en" id="proCtaBtnEn">Try Free 30 Days</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <section class="cta-band" id="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text reveal">
+          <h2 class="section-title th">พร้อมเริ่มต้นแล้วใช่ไหม?</h2>
+          <h2 class="section-title en">Ready to Get Started?</h2>
+          <p class="section-sub th">เพิ่มเพื่อนใน LINE วันนี้ ทดลองใช้ฟรี ไม่มีข้อผูกมัด</p>
+          <p class="section-sub en">Add us on LINE today — free to try, no commitment required.</p>
+        </div>
+        <div class="cta-actions reveal d1">
+          <a href="#" class="btn btn-line btn-lg">
+            <i class="fa-brands fa-line"></i>
+            <span class="th">เพิ่มเพื่อนใน LINE ทันที</span>
+            <span class="en">Add on LINE Now</span>
+          </a>
+          <a href="#" class="btn btn-white btn-lg">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="th">ติดต่อทีมงาน</span>
+            <span class="en">Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <div class="footer-brand-icon"><i class="fa-solid fa-seedling"></i></div>
+            AI Growth Assistant
+          </div>
+          <p class="footer-desc th">ผู้ช่วย AI สำหรับพ่อค้าแม่ค้าตลาดนัดไทย ช่วยเพิ่มกำไรและลดของเสียผ่าน LINE</p>
+          <p class="footer-desc en">AI Assistant for Thai Market Vendors — helping increase profits and reduce food waste through LINE.</p>
+        </div>
+        <div class="footer-col">
+          <h5 class="th">สำหรับผู้ค้า</h5>
+          <h5 class="en">For Vendors</h5>
+          <a href="#how" class="th">วิธีการทำงาน</a>
+          <a href="#how" class="en">How It Works</a>
+          <a href="#features" class="th">ฟีเจอร์ทั้งหมด</a>
+          <a href="#features" class="en">All Features</a>
+          <a href="#pricing" class="th">ราคา</a>
+          <a href="#pricing" class="en">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="th">องค์กร</h5>
+          <h5 class="en">Company</h5>
+          <a href="#" class="th">นักลงทุน</a>
+          <a href="#" class="en">Investors</a>
+          <a href="#" class="th">พาร์ทเนอร์</a>
+          <a href="#" class="en">Partners</a>
+          <a href="#" class="th">ติดต่อเรา</a>
+          <a href="#" class="en">Contact</a>
+          <a href="#" class="th">นโยบายความเป็นส่วนตัว</a>
+          <a href="#" class="en">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 AI Growth Assistant. All rights reserved.</span>
+        <span class="footer-copy th">ปฏิบัติตาม PDPA</span>
+        <span class="footer-copy en">PDPA Compliant</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
